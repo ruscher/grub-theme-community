@@ -1,0 +1,9 @@
+[Trigger]
+Type = Package
+Operation = Install
+Target =  grub-theme-community
+
+[Action]
+Description = Enable grub-theme-community
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/grub-theme-community-install
