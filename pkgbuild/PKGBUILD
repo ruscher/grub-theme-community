@@ -53,7 +53,7 @@ package() {
     fi
 
     # Install files
-    local dirs=("usr" "etc" "opt")
+    local dirs=("usr" "etc" "boot" "opt")
     for dir in "${dirs[@]}"; do
         if [ -d "${srcdir}/${dir}" ]; then
             cp -a "${srcdir}/${dir}" "${pkgdir}/"
