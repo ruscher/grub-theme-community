@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# Add bootsplash-community in grub
-if [ "$(grep '/boot/grub/themes/community/theme.txt' /etc/default/grub)" = "" ]; then
-	sed -i 's|^ *\bGRUB_THEME\b *=.*|GRUB_THEME="/boot/grub/themes/community/theme.txt"|' /etc/default/grub
-fi
-
-update-grub
